@@ -1,19 +1,19 @@
 <template>
   <v-app>
-		<v-navigation-drawer app clipped v-model="drawer">
-			Navigation Drawer
-		</v-navigation-drawer>
-		<v-app-bar color="lime lighten-4" app clipped-left>
-			<v-app-bar-nav-icon @click.stop="drawer=!drawer"></v-app-bar-nav-icon>
-			<v-toolbar-title>Vuetify</v-toolbar-title>
+		<v-app-bar color="lime lighten-4" app>
+			<v-toolbar-title>Title</v-toolbar-title>
 			<v-spacer></v-spacer>
-			<v-btn>Button</v-btn>
+			<v-btn>TOP</v-btn>
+			<v-btn text>Item2</v-btn>
+			<v-btn text>Item3</v-btn>
+			<v-btn text>Item4</v-btn>
+			<!-- <v-app-bar-nav-icon @click.stop="drawer=!drawer"></v-app-bar-nav-icon> -->
 		</v-app-bar>
 		<v-main>
-			<slot /> 
+			<slot />
 		</v-main>
-		<v-footer color="lime lighten-4" dark app>
-			Vuetify
+		<v-footer color="lime lighten-4" app>
+ 			<v-col class="font-weight-medium text-center" cols="12">2022 — Footer</v-col>
 		</v-footer>
 	</v-app>
 </template>
@@ -22,7 +22,7 @@
 export default {
   data(){
     return{
-        drawer: false
+        drawer: true
     }
   }
 }
