@@ -6,6 +6,7 @@
         :loading="loading"
         class="ml-auto mr-3 my-6"
         max-width="824"
+        min-height="410"
         >
           <template slot="progress">
             <v-progress-linear
@@ -15,66 +16,38 @@
             ></v-progress-linear>
           </template>
 
-          <v-img
+          <v-card-title>
+            <p class="mt-4">
+              Cafe A.B
+            </p>
+          </v-card-title>
+
+          <!-- <v-img
             height="250"
             src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
-          ></v-img>
+          ></v-img> -->
 
-          <v-card-title>Cafe Badilico</v-card-title>
-
-          <v-card-text>
-            <v-row
-              align="center"
-              class="mx-0"
-            >
-              <v-rating
-                :value="4.5"
-                color="amber"
-                dense
-                half-increments
-                readonly
-                size="14"
-              ></v-rating>
-
-              <div class="grey--text ms-4">
-                4.5 (413)
-              </div>
-            </v-row>
-
-            <div class="my-4 text-subtitle-1">
-              $ • Italian, Cafe
+          <v-card-text class="d-flex flex-row-reverse">
+            <div class="text-subtitle-3">
+              2022/05/07
             </div>
-
-            <div>Small plates, salads & sandwiches - an intimate setting with 12 indoor seats plus patio seating.</div>
           </v-card-text>
 
-          <v-divider class="mx-4"></v-divider>
-
-          <v-card-title>Tonight's availability</v-card-title>
+          <v-divider class="mx-4 mb-4"></v-divider>
 
           <v-card-text>
-            <v-chip-group
-              v-model="selection"
-              active-class="deep-purple accent-4 white--text"
-              column
-            >
-              <v-chip>5:30PM</v-chip>
-
-              <v-chip>7:30PM</v-chip>
-
-              <v-chip>8:00PM</v-chip>
-
-              <v-chip>9:00PM</v-chip>
-            </v-chip-group>
+            <div>
+              こんにちは。<br>今日もいい天気ですね。
+            </div>
           </v-card-text>
 
-          <v-card-actions>
+          <v-card-actions class="d-flex justify-center mb-0">
             <v-btn
-              color="deep-purple lighten-2"
+              color="deep-purple lighten-3"
               text
-              @click="reserve"
+              @click="old"
             >
-              Reserve
+              以前の投稿
             </v-btn>
           </v-card-actions>
         </v-card>
@@ -87,22 +60,22 @@
         >
           <v-layout>
             <v-navigation-drawer permanent absolute>
-              <v-system-bar></v-system-bar>
+              <!-- <v-system-bar></v-system-bar> -->
               <v-list>
                 <v-list-item
-                  prepend-avatar="https://cdn.vuetifyjs.com/images/john.png"
-                  title="John Leider"
-                  subtitle="john@vuetifyjs.com"
+                  prepend-avatar="avator.JPG"
+                  title="Kazuaki Akabane"
+                  subtitle="sample@sample.com"
                 >
-                  <template v-slot:append>
+                  <!-- <template v-slot:append>
                     <v-list-item-avatar end>
                       <v-btn size="small" variant="text" icon="mdi-menu-down"></v-btn>
                     </v-list-item-avatar>
-                  </template>
+                  </template> -->
                 </v-list-item>
               </v-list>
               <v-divider></v-divider>
-              <v-list
+              <!-- <v-list
                 nav
                 dense
               >
@@ -118,9 +91,9 @@
 
                   <v-list-item-title v-text="item.text"></v-list-item-title>
                 </v-list-item>
-              </v-list>
+              </v-list> -->
             </v-navigation-drawer>
-            <v-main style="height: 550px"></v-main>
+            <v-main style="height: 510px"></v-main>
           </v-layout>
         </v-card>
       </v-col>

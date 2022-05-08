@@ -1,7 +1,7 @@
 <template>
   <v-app>
 		<v-app-bar color="lime lighten-4" app>
-			<v-toolbar-title>Title</v-toolbar-title>
+			<v-toolbar-title class="ml-4">Title</v-toolbar-title>
 			<v-spacer></v-spacer>
 			<v-btn>TOP</v-btn>
 			<v-btn text>Item2</v-btn>
