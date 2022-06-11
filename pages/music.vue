@@ -19,7 +19,7 @@
     <v-divider class="mx-4 mb-4"></v-divider>
     <v-card-text>
       <div>
-        自主制作<br>・・・
+        ・・・
       </div>
     </v-card-text>
   </v-card>

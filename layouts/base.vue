@@ -38,7 +38,7 @@ function navigate(path:string){
 										<v-list-item
 											prepend-avatar="avatar.JPG"
 											title="kurikuto"
-											subtitle="k-ab6@outlook.com"
+											subtitle="XXXX@xxxx.com"
 										>
 											<!-- <template v-slot:append>
 												<v-list-item-avatar end>
