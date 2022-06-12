@@ -6,6 +6,10 @@ export default defineNuxtConfig({
     shim: false
   },
 	css: ['vuetify/lib/styles/main.sass'],
+  // vuetify: {
+  //   customVariables: ['~/assets/variables.scss'],
+  //   treeShake: true
+  // },
   build: {
     transpile: ['vuetify']
   },

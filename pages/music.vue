@@ -13,32 +13,15 @@
     </template>
     <v-card-title>
       <p class="mt-4">
-        Cafe A.B
+        音楽
       </p>
     </v-card-title>
-    <!-- <v-img
-      height="250"
-      src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
-    ></v-img> -->
-    <v-card-text class="d-flex flex-row-reverse">
-      <div class="text-subtitle-3">
-        2022/05/07
-      </div>
-    </v-card-text>
     <v-divider class="mx-4 mb-4"></v-divider>
     <v-card-text>
       <div>
-        こんにちは。<br>今日は雨ですね。
+        ・・・
       </div>
     </v-card-text>
-    <v-card-actions class="d-flex justify-center mb-0">
-      <v-btn
-        color="deep-purple lighten-3"
-        text
-      >
-        以前の投稿
-      </v-btn>
-    </v-card-actions>
   </v-card>
 </template>
 

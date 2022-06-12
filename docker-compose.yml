@@ -1,0 +1,15 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - 3030:3000
+      - 24678:24678
+    working_dir: /app
+    volumes:
+      - .:/app/
+    # environment:
+    # - CHOKIDAR_USEPOLLING=true
+    command: sh -c "yarn && yarn dev"
+    stdin_open: true
+    tty: true
