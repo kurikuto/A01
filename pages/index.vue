@@ -28,7 +28,7 @@
     <v-divider class="mx-4 mb-4"></v-divider>
     <v-card-text>
       <div>
-        こんにちは。<br>今日もいい天気ですね。
+        こんにちは。<br>今日は雨ですね。
       </div>
     </v-card-text>
     <v-card-actions class="d-flex justify-center mb-0">
